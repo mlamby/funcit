@@ -3,6 +3,8 @@ project (funcit)
 enable_testing()
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED on)
 
 include_directories("${PROJECT_BINARY_DIR}")
 
