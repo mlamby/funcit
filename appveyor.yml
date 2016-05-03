@@ -1,13 +1,14 @@
-version: 5.8.x.{build}
 os: Visual Studio 2015
-environment:
-  matrix:
-  - {}
+version: 1.0.{build}
 build_script:
 - cmd: >-
     mkdir build
+
     cd build
+
     cmake .. -G "Visual Studio 14"
-    cmake --build . 
+
+    cmake --build .
+
 test_script:
 - cmd: ctest
